@@ -51,9 +51,8 @@ class main
         $this->html .= htmltags::horizontalRule();
         
         $this->html .= htmltags::heading3("Leap Year");
-        $this->html .= stringman::stringExplode("/",$date);
         $this->html .= LeapYear::find_leap_year($year);
-
+        $this->html .= htmltags::horizontalRule();
 	}
  	
  	 public function __destruct() 
