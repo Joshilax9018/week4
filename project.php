@@ -50,14 +50,18 @@ class main
 		$this->html .= stringman::stringExplode("-",$date);
         $this->html .= htmltags::horizontalRule();
         
-        $this->html .= htmltags::heading3("Leap Year");
-        $this->html .= LeapYear::find_leap_year($year);
-        $this->html .= htmltags::horizontalRule();
+        //$this->html .= htmltags::heading3("Leap Year");
+        //$this->html .= LeapYear::find_leap_year($year);
+        //$this->html .= htmltags::horizontalRule();
 	}
  	
  	 public function __destruct() 
  	{
- 		print($this->html);
+ 		$year = array(2012, 396, 300,2000, 1100, 1089);
+     print($this->html);
+     $this->html .= htmltags::heading3("Leap Year");
+        $this->html .= LeapYear::find_leap_year($year);
+        $this->html .= htmltags::horizontalRule();
  	}
 }
 
