@@ -108,7 +108,10 @@ class stringMan
 
 	 static public function stringExplode($value,$string1)
 	 {
-	 	print_r (explode($value,$string1));
+	 	//print_r (explode($value,$string1));
+     $out = explode('-',$string1);
+
+     return implode(" ", $out);
 	 }
 
 
