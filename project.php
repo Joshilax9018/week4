@@ -47,7 +47,7 @@ class main
 		$this->html .= htmltags::horizontalRule();
 
 		$this->html .= htmltags::heading3("String into Array Example:");
-		$this->html .= stringman::stringExplode("/",$date);
+		$this->html .= stringman::stringExplode("-",$date);
         $this->html .= htmltags::horizontalRule();
         
         $this->html .= htmltags::heading3("Leap Year");
